@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+  <title>AI Tab Sorter</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Tab Sorter</h1>
+    <div id="status" class="status"></div>
+    <button id="sort-btn" class="btn primary">Sort Tabs</button>
+    <button id="unsort-btn" class="btn secondary">Ungroup All</button>
+    <div class="settings">
+      <label class="toggle">
+        <input type="checkbox" id="force-fallback">
+        <span>Use domain-only sorting</span>
+      </label>
+    </div>
+    <div id="ai-badge" class="badge"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

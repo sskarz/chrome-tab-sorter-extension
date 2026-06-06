@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "AI Tab Sorter",
+  "version": "1.0.0",
+  "description": "Automatically sort and group browser tabs using on-device AI (Gemini Nano) with domain-based fallback",
+  "permissions": [
+    "tabs",
+    "tabGroups",
+    "storage",
+    "offscreen"
+  ],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AI Tab Sorter"
+  },
+  "minimum_chrome_version": "128"
+}
